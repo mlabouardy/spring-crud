@@ -43,7 +43,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n");
       out.write("\n");
-      out.write("   My body");
+      out.write("<div class=\"row\">\n");
+      out.write("\t<div class=\"row-option-left\">\n");
+      out.write("\t\t<button type=\"button\" class=\"btn btn-success\">Ajouter un atelier</button>\n");
+      out.write("\t</div>\n");
+      out.write("</div>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

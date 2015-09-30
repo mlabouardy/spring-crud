@@ -43,7 +43,7 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n");
       out.write("\n");
-      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n");
+      out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("<head>\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
@@ -51,18 +51,43 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_tiles_getAsString_0(_jspx_page_context))
         return;
       out.write("</title>\n");
+      out.write("\n");
+      out.write("<!-- Latest compiled and minified CSS -->\n");
+      out.write("<link rel=\"stylesheet\"\n");
+      out.write("\thref=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\">\n");
+      out.write("\n");
+      out.write("<!-- Optional theme -->\n");
+      out.write("<link rel=\"stylesheet\"\n");
+      out.write("\thref=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css\">\n");
+      out.write("\n");
+      out.write("<!--  JQuery script -->\n");
+      out.write("<script src=\"https://code.jquery.com/jquery-2.1.4.min.js\" /></script>\n");
+      out.write("\n");
+      out.write("<!-- Latest compiled and minified JavaScript -->\n");
+      out.write("<script\n");
+      out.write("\tsrc=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js\"></script>\n");
+      out.write("\n");
+      out.write("<style>\t\n");
+      out.write(".container{\n");
+      out.write("\tmargin-top:50px;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".row-option-left{\n");
+      out.write("float:right;}\n");
+      out.write("</style>\n");
       out.write("</head>\n");
       out.write("<body>\n");
-      out.write("\n");
-      out.write("\t");
+      out.write("\t<div class=\"container\">\n");
+      out.write("\t\t");
       if (_jspx_meth_tiles_insertAttribute_0(_jspx_page_context))
         return;
       out.write("\n");
-      out.write("\t<br/>\n");
-      out.write("\t");
+      out.write("\t\t<br />\n");
+      out.write("\t\t");
       if (_jspx_meth_tiles_insertAttribute_1(_jspx_page_context))
         return;
       out.write("\n");
+      out.write("\t</div>\n");
       out.write("</body>\n");
       out.write("</html>");
     } catch (Throwable t) {
