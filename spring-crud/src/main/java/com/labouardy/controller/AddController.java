@@ -2,7 +2,9 @@ package com.labouardy.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import com.labouardy.entity.Workshop;
@@ -29,4 +31,17 @@ public class AddController {
 		WorkshopService.save(workshop);
 		return "redirect:/index.html";
 	}
+	
+	@RequestMapping("/workshop/update/{id}")
+	public String updateWorkshop(Model model, @PathVariable int id){
+		model.addAttribute("workshop", WorkshopService.findById(id));
+		return "update-workshop";
+	}
+	
+	@RequestMapping("/workshop/delete/{id}")
+	public String deleteWorkshop(@PathVariable int id){
+		WorkshopService.delete(id);
+		return "redirect:/index.html";
+	}
+	
 }

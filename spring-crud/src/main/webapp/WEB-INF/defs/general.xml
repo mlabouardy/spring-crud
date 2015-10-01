@@ -18,5 +18,11 @@
     	 <put-attribute name="body" value="/WEB-INF/jsp/new-workshop.jsp" />
     	 <put-attribute name="new-workshop" value="index"></put-attribute>
     </definition>
+    
+     <definition name="update-workshop" extends="common">
+         <put-attribute name="title" value="Modification de l'atelier" />
+    	 <put-attribute name="body" value="/WEB-INF/jsp/update-workshop.jsp" />
+    	 <put-attribute name="new-workshop" value="index"></put-attribute>
+    </definition>
    
 </tiles-definitions>

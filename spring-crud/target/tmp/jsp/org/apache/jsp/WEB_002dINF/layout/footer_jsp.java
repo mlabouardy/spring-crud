@@ -42,7 +42,10 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
-      out.write("MOhamed labouardy :D");
+      out.write("\n");
+      out.write("<div class=\"container\">\n");
+      out.write("\tMohamed Labouardy - Université de Bordeaux 1\n");
+      out.write("</div>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

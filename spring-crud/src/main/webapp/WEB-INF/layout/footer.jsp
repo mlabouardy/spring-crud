@@ -1,3 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-MOhamed labouardy :D
+
+<div class="container">
+	Mohamed Labouardy - Université de Bordeaux 1
+</div>

@@ -24,4 +24,12 @@ public class WorkshopService {
 	public void save(Workshop workshop) {
 		workshopRepository.save(workshop);
 	}
+
+	public Workshop findById(int id) {
+		return workshopRepository.findOne(id);
+	}
+
+	public void delete(int id) {
+		workshopRepository.delete(id);
+	}
 }

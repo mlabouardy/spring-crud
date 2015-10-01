@@ -4,7 +4,7 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <div class="row">
 	<div class="row-option-left">
-		<button type="button" class="btn btn-success"><a href="<spring:url value="/add.html"/>">Ajouter un atelier</a></button>
+		<a href="<spring:url value="/add.html"/>" class="btn btn-success">Ajouter un atelier</a>
 	</div>
 </div>
 <br />
@@ -18,7 +18,7 @@
 					<th>Matiere</th>
 					<th>Animateur</th>
 					<th>Description</th>
-					<th colspan="2" style="text-align:center">Options</th>
+					<th>Options</th>
 				</thead>
 				<tbody>
 					<c:forEach items="${workshops}" var="workshop">
@@ -27,8 +27,10 @@
 							<td>${workshop.subject}</td>
 							<td>${workshop.animator}</td>
 							<td>${workshop.description}</td>
-							<td style="text-align:center"><button type="button" class="btn btn-info">Modifier</button></td>
-							<td style="text-align:center"><button type="button" class="btn btn-danger">Supprimer</button></td>
+							<td>
+								<a href="<spring:url value="/workshop/update/${workshop.id}.html"/>" class="btn btn-info">Modifier</a>
+								<a href="<spring:url value="/workshop/delete/${workshop.id}.html"/>" class="btn btn-danger">Supprimer</a>
+							</td>
 						</tr>
 					</c:forEach>
 				</tbody>
