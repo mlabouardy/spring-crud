@@ -1,1 +1,6 @@
+/home/mlabouardy/spring-crud/spring-crud/src/main/java/com/labouardy/service/InitDbService.java
+/home/mlabouardy/spring-crud/spring-crud/src/main/java/com/labouardy/controller/AddController.java
+/home/mlabouardy/spring-crud/spring-crud/src/main/java/com/labouardy/repository/WorkshopRepository.java
+/home/mlabouardy/spring-crud/spring-crud/src/main/java/com/labouardy/entity/Workshop.java
+/home/mlabouardy/spring-crud/spring-crud/src/main/java/com/labouardy/service/WorkshopService.java
 /home/mlabouardy/spring-crud/spring-crud/src/main/java/com/labouardy/controller/IndexController.java

@@ -8,9 +8,15 @@
     </definition>
     
     <definition name="index" extends="common">
-         <put-attribute name="title" value="CRUD" />
+         <put-attribute name="title" value="Gestion des ateliers" />
     	 <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
     	 <put-attribute name="current" value="index"></put-attribute>
+    </definition>
+    
+    <definition name="new-workshop" extends="common">
+         <put-attribute name="title" value="Création d'un atelier" />
+    	 <put-attribute name="body" value="/WEB-INF/jsp/new-workshop.jsp" />
+    	 <put-attribute name="new-workshop" value="index"></put-attribute>
     </definition>
    
 </tiles-definitions>

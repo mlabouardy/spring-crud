@@ -22,13 +22,19 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-<style>	
-.container{
-	margin-top:50px;
+<style>
+.container {
+	margin-top: 50px;
 }
 
-.row-option-left{
-float:right;}
+.row-option-left {
+	float: right;
+}
+
+.btn-success a {
+	text-decoration: none;
+	color: #fff;
+}
 </style>
 </head>
 <body>
